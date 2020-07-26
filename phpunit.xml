@@ -10,7 +10,7 @@
     strict="false"
     verbose="true">
     <testsuites>
-        <testsuite>
+        <testsuite name="main">
             <directory suffix="Test.php" phpVersion="7.0.0" phpVersionOperator="&gt;=">tests/phpunit/</directory>
         </testsuite>
     </testsuites>
