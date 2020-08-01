@@ -110,6 +110,8 @@ class CompileCommand extends Command
                 }
             }
         }
+
+        return 0;
     }
 
     /**
