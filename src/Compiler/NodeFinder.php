@@ -86,7 +86,7 @@ class NodeFinder
             if ($node instanceof Node\Stmt\Class_) {
                 $classes[] = $node;
             }
-            if (property_exists($node, 'stmts') && count($node->stmts)) {
+            if (property_exists($node, 'stmts') && \is_array($node->stmts) && \count($node->stmts)) {
                 $classes += $this->findClasses(...$node->stmts);
             }
         }
